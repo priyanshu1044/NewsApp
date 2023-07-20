@@ -16,20 +16,19 @@ class _CategoryState extends State<Category> {
   getNewsByQuery(String query) async {
     String url = "";
     if(query == "Top News" || query == "India"){
-      url =
-          "https://newsapi.org/v2/top-headlines?country=in&apiKey=54b183bd892847cb8d138d9679b534f6";
+      url ="https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=8d79f51b5b9a4fbfa3f7e4c82f262f8d";
     }
     else if(query == "World"){
       url =
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=54b183bd892847cb8d138d9679b534f6";
+      "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=8d79f51b5b9a4fbfa3f7e4c82f262f8d";
     }
     else if(query == "Business"){
       url =
-      "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=54b183bd892847cb8d138d9679b534f6";
+      "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8d79f51b5b9a4fbfa3f7e4c82f262f8d";
     }
     else {
       url =
-          "https://newsapi.org/v2/everything?q=$query&from=2022-10-01&sortBy=publishedAt&apiKey=54b183bd892847cb8d138d9679b534f6";
+          "https://newsapi.org/v2/everything?q=$query&from=2023-06-20&sortBy=publishedAt&apiKey=8d79f51b5b9a4fbfa3f7e4c82f262f8d";
     }
     Response response = await get(Uri.parse(url));
     Map data = jsonDecode(response.body);

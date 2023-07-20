@@ -30,8 +30,7 @@ class _HomeState extends State<Home> {
   getNewsByQuery(String query) async {
     Map element;
     int i = 0;
-    String url =
-        "https://newsapi.org/v2/everything?q=$query&from=2022-10-01&sortBy=publishedAt&apiKey=54b183bd892847cb8d138d9679b534f6";
+    String url ="https://newsapi.org/v2/everything?q=$query&from=2023-06-20&sortBy=publishedAt&apiKey=8d79f51b5b9a4fbfa3f7e4c82f262f8d";
     Response response = await get(Uri.parse(url));
     Map data = jsonDecode(response.body);
     setState(() {
