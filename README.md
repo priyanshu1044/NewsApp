@@ -29,4 +29,7 @@ Flutter News App with newsapi.org. Developed using the Test Driven Development.
 [Priyanshu Patel ](https://github.com/priyanshu1044)
 
 ### Video Link
-[NewsApp-Youtube]()
+[NewsApp-Youtube](https://youtu.be/txxvlT9_3J4)
+
+### Screenshots
+[drive-link](https://drive.google.com/drive/folders/11FQseymFQLbm3_veHiyQ2d2cK9jwrbBM?usp=sharing)
